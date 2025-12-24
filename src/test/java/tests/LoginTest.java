@@ -26,7 +26,7 @@ public class LoginTest extends BaseTest {
     public void loginFail(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.inputUserName("Admin");
-        loginPage.inputPass("admin124");
+        loginPage.inputPass("admin1234");
         loginPage.clickLoginButton();
         Assert.assertTrue(loginPage.isLoginFailed(), "Không hiển thị message lỗi");
         System.out.println("Login fail đúng mong đợi");
